@@ -9,43 +9,50 @@
     
     <header>
         <h1>LOIS.TV</h1>
-        <section> <!--what im trying to do here is build a menu box that i can press and it will open a page that will layer over my main page or every page its on and show the things inside-->
-        <nav>
-            <h2><a href="index.html">LOIS.TV</a></h2> <!--selcting the lois.TV title should always bring me back to main page.-->
-            <!--need an "x" button to the right for closing this nav-->
-            <!--place search bar here-->
-            <section class="shows">
-                <h3>Shows</h3>
-                <ul>
-                    <li><a href="trending.html">Trending</a></li>
-                    <li><a href="newly-released.html">Newly Released</a></li>
-                    <li><a href="plan-to-watch.html">Plan to Watch</a></li>
-                </ul>
-                
-            </section>
-
-            <section class="my-favorites">
-                <h3>My favorites</h3>
-                <ul>
-                    <li><a href="recently-added.html">Recently Added</a></li>
-                    <li><a href="top-news.html">Top News</a></li>
-                </ul>
-
-            </section>
-
-            <section class="genres">
-                <h3>Genres</h3>
-                <ul>
-                    <li><a href="drama.html">Drama</a></li>
-                    <li><a href="crime.html">Crime</a></li>
-                    <li><a href="anime.html">Anime</a></li>
-                </ul>
-
-            </section>
-
+        <nav id="main-nav"> <!--This is my main page navigation section-->
+            <ul>
+                <li><a href="#trending-shows">Trending</a></li>
+                <li><a href="#favorite-tv-shows">My Favorites</a></li>
+                <li><a href="#trending-news">What's News</a></li>
+            </ul>
         </nav>
 
-        </section>
+            <nav id="menu-box"> <!--This is my menu box-->
+                <h2><a href="index.html">LOIS.TV</a></h2> <!--selcting the lois.TV title should always bring me back to main page.--> 
+                <button class="close-menu" aria-label="close menu">X</button>
+                <form class="menu-search" action="#" method="get">
+                    <input type="text" placeholder="Search shows"> <!--action is where the data should be sent too.-->
+                    <button type="submit">Search</button>
+                </form>
+                <div class="shows">
+                    <h3>Shows</h3>
+                    <ul>
+                        <li><a href="trending-shows.html">Trending</a></li>
+                        <li><a href="newly-released.html">Newly Released</a></li>
+                        <li><a href="plan-to-watch.html">Plan to Watch</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="my-favorites">
+                    <h3>My favorites</h3>
+                    <ul>
+                        <li><a href="my-favorites.html">Recently Added</a></li>
+                        <li><a href="trending-news.html">Top News</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="genres">
+                    <h3>Genres</h3>
+                    <ul>
+                        <li><a href="drama.html">Drama</a></li>
+                        <li><a href="crime.html">Crime</a></li>
+                        <li><a href="anime.html">Anime</a></li>
+                    </ul>
+
+                </div>
+            </nav>
     </header>
     
   </body>
