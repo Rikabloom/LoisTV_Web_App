@@ -11,69 +11,72 @@
 <body>
     <header>
         <h1>LOIS.TV</h1>
-        <nav>
+        <nav id="main-nav"> <!--This is my main page navigation section-->
             <ul>
                 <li><a href="#trending-shows">Trending</a></li>
                 <li><a href="#favorite-tv-shows">My Favorites</a></li>
-                <li><a href="#news-on-fav-tv-shows">What's News</a></li>
+                <li><a href="#trending-news">What's News</a></li>
             </ul>
         </nav>
 
-            <!--what im trying to do here is build a menu box that i can press and it will open a page that will layer over my main page or every page its on and show the things inside-->
-            <nav id="menu">
-                <h2><a href="index.html">LOIS.TV</a></h2>
-                <!--selcting the lois.TV title should always bring me back to main page.-->
-                <!--need an "x" button to the right for closing this nav-->
-                <!--place search bar here-->
-                <section class="shows">
+            <nav id="menu-box"> <!--This is my menu box-->
+                <h2><a href="index.html">LOIS.TV</a></h2> <!--selcting the lois.TV title should always bring me back to main page.--> 
+                <button class="close-menu" aria-label="close menu">X</button>
+                <form class="menu-search" action="#" method="get">
+                    <input type="text" placeholder="Search shows"> <!--action is where the data should be sent too.-->
+                    <button type="submit">Search</button>
+                </form>
+                <div class="shows">
                     <h3>Shows</h3>
                     <ul>
-                        <li><a href="trending.html">Trending</a></li>
+                        <li><a href="trending-shows.html">Trending</a></li>
                         <li><a href="newly-released.html">Newly Released</a></li>
                         <li><a href="plan-to-watch.html">Plan to Watch</a></li>
                     </ul>
 
-                </section>
+                </div>
 
-                <section class="my-favorites">
+                <div class="my-favorites">
                     <h3>My favorites</h3>
                     <ul>
-                        <li><a href="recently-added.html">Recently Added</a></li>
-                        <li><a href="top-news.html">Top News</a></li>
+                        <li><a href="my-favorites.html">Recently Added</a></li>
+                        <li><a href="trending-news.html">Top News</a></li>
                     </ul>
 
-                </section>
+                </div>
 
-                <section class="genres">
+                <div class="genres">
                     <h3>Genres</h3>
                     <ul>
                         <li><a href="drama.html">Drama</a></li>
                         <li><a href="crime.html">Crime</a></li>
                         <li><a href="anime.html">Anime</a></li>
                     </ul>
-                </section>
+
+                </div>
             </nav>
     </header>
 
     <main>
-        <div class="promo"> <!--section 1  -->
-            <p id="promo-heading">The best place to get updates on all your favorite TV series</p>
-            <!--this will be resized with CSS. I was considering making it a heading but I wasnt sure.-->
-            <p>Keep track of everything you are watching</p>
-            <p>Read the latest News on what's happening in your shows</p>
-            <p>Get notified when new episodes/seasons are about to drop!</p>
-            <p>Discover what to watch next!</p>
-            <p>See the release schedule of all your favorite shows</p>
-        </div>
+        <section class="promo"> <!--section 1-PROMO-->
+            <h2>The best place to get updates on all your favorite TV series</h2>
+            <ul class="promo-list">
+            <li>Keep track of everything you are watching</li>
+            <li>Read the latest News on what's happening in your shows</li>
+            <li>Get notified when new episodes/seasons are about to drop!</li>
+            <li>Discover what to watch next!</li>
+            <li>See the release schedule of all your favorite shows</li>
+            </ul>
+        </section>
 
-        <section class="trending" id="trending-shows"> <!--section 2-->
-            <h2><a href="trending.html">Trending shows</a></h2>
+        <section class="trending" id="trending-shows"> <!--section 2 TRENDING TV SHOWS-->
+            <h2><a href="trending-shows.html">Trending shows</a></h2>
             <p>Shows with the most views in the last 5 days</p>
 
             <a href="wednesday-card.html">
-                <article class="card" id="wednesday">
+                <article class="wednesday-card">
                     <figure>
-                        <h2>WEDNESDAY</h2>
+                        <h3>WEDNESDAY</h3>
                         <img src="#" alt="blank"> <!--place image and type a description later-->
                         <figcaption>2 season . 2025 . Continuing</figcaption> <!--will adujust size with CSS-->
                     </figure>
@@ -81,9 +84,9 @@
             </a>
 
             <a href="law-and-order-svu-card.html">
-                <article class="card" id="Law-and-order-svu">
+                <article class="law-and-order-svu-card">
                     <figure>
-                        <h2>Law & Order: Special Victims Unit</h2>
+                        <h3>Law & Order: Special Victims Unit</h3>
                         <img src="#" alt="blank"> <!--place image and type a description later-->
                         <figcaption>27 season . 2025 . Continuing</figcaption> <!--will adujust size with CSS-->
                     </figure>
@@ -91,9 +94,9 @@
             </a>
 
             <a href="invincible-card.html">
-                <article class="card" id="invincible">
+                <article class="invincible-card">
                     <figure>
-                        <h2>INVINCIBLE</h2>
+                        <h3>INVINCIBLE</h3>
                         <img src="#" alt="blank"> <!--place image and type a description later-->
                         <figcaption>4 season . 2025 . Continuing</figcaption> <!--will adujust size with CSS-->
                     </figure>
@@ -102,13 +105,12 @@
 
         </section>
 
-        <section class="news" id="favorite-tv-shows"> <!--section 3-->
-            <h2><a href="recently-added.html">My Favorites</a></h2>
+        <section class="my-favorites" id="favorite-tv-shows"> <!--section 3 MY FAVORITES-->
+            <h2><a href="my-favorites.html">My Favorites</a></h2>
             <p>Countinue watching the shows you love!</p>
 
             <a href="wednesday-card.html">
-                <article>
-                    <!--since the favorties is something you add i thought it would work if i just linked it back to the first time i introduced it like in the trend page since they will be opening the same page and i know i cant use the same id for the same doc.-->
+                <article class="wednesday-card">
                     <figure>
                         <h2>WEDNESDAY</h2>
                         <img src="#" alt="blank"> <!--place image and type a description later-->
@@ -118,7 +120,7 @@
             </a>
 
             <a href="law-and-order-svu-card.html">
-                <article>
+                <article class="law-and-order-svu-card">
                     <figure>
                         <h2>Law & Order: Special Victims Unit</h2>
                         <img src="#" alt="blank"> <!--place image and type a description later-->
@@ -128,7 +130,7 @@
             </a>
 
             <a href="invincible-card.html">
-                <article>
+                <article class="invincible-card">
                     <figure>
                         <h2>INVINCIBLE</h2>
                         <img src="#" alt="blank"> <!--place image and type a description later-->
@@ -139,13 +141,12 @@
 
         </section>
 
-        <section class="news" id="news-on-fav-tv-shows"> <!--section 4-->
-            <h2><a href="top-news.html">What's News</a></h2>
+        <section class="news" id="trending-news"> <!--section 4 TRENDING NEWS-->
+            <h2><a href="trending-news.html">What's News</a></h2>
             <p>What's going on with your favorite TV shows?</p>
 
             <a href="#">
                 <article class="news" id="law-and-order-svu-news">
-                    <!--this section is strictly for showing articles on my favorited shows don't know how it will work here but i started the code anyways-->
                     <h2>Is this the last season of Law & Order SVU?</h2>
                     <p>Season 27 might just be the end of Law & Order SVU</p>
                     <img src="#" alt="blank"> <!--i will add an image and desciption-->
@@ -174,9 +175,7 @@
     </main>
 
     <footer>
-        <address> <!--I have no idea how to write the code here or if i should add anything at all.-->
-
-        </address>
+        <address> </address>
     </footer>
 </body>
 
