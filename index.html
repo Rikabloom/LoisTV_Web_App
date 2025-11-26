@@ -1,84 +1,162 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Find out what's news with your tv series.
-        Know when a new episode of your favorite tv shows is about to air!" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" /> <!--come back here to write description for SEO-->
     <title>LOIS.TV</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-
-<body id="top_of_page">
-    <main>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
         <h1>LOIS.TV</h1>
-        <h2>TV series</h2>
-        <br>
+        <nav>
+            <ul>
+                <li><a href="#trending-shows">Trending</a></li>
+                <li><a href="#favorite-tv-shows">My Favorites</a></li>
+                <li><a href="#news-on-fav-tv-shows">What's News</a></li>
+            </ul>
+        </nav>
+        <section> <!--what im trying to do here is build a menu box that i can press and it will open a page that will layer over my main page or every page its on and show the things inside-->
+        <nav>
+            <h2><a href="index.html">LOIS.TV</a></h2> <!--selcting the lois.TV title should always bring me back to main page.-->
+            <!--need an "x" button to the right for closing this nav-->
+            <!--place search bar here-->
+            <section class="shows">
+                <h3>Shows</h3>
+                <ul>
+                    <li><a href="trending.html">Trending</a></li>
+                    <li><a href="newly-released.html">Newly Released</a></li>
+                    <li><a href="plan-to-watch.html">Plan to Watch</a></li>
+                </ul>
+                
+            </section>
 
-        <div class="card-container">
-            <div class="card" id="law_and_order_svu">
-                <section>
-                    <figure>
-                        <a href="crime_series/law_and_order/law_and_order_svu.html" target="_self">
-                            <img src="https://res.cloudinary.com/dtznj6x3p/image/upload/v1763756839/law_and_order_svu_xpw5xa.jpg"
-                                alt="law and order svu poster image" width="480" height="720">
-                        </a>
-                        <figcaption>
-                            <strong>Law & Order: Special Victims</strong> <!--Name of show-->
-                            <br>
-                            <em>Ongoing</em> <!--I want to have a small cirle that is a certian color for status-->
-                        </figcaption>
-                    </figure>
-                </section>
-                <br>
-            </div>
+            <section class="my-favorites">
+                <h3>My favorites</h3>
+                <ul>
+                    <li><a href="recently-added.html">Recently Added</a></li>
+                    <li><a href="top-news.html">Top News</a></li>
+                </ul>
 
-            <div class="card" id="reasonable_doubt">
-                <section>
-                    <figure>
-                        <a href="drama_series/reasonable_doubt.html" target="_self">
-                            <img src="https://res.cloudinary.com/dtznj6x3p/image/upload/v1763756836/reasonable_doubt_nnw03k.webp"
-                                alt="reasonable doubt poster image" width="480" height="720">
-                        </a>
-                        <figcaption>
-                            <strong>Reasonable Doubt</strong> <!--Name of show-->
-                            <br>
-                            <em>Ongoing</em> <!--I want to have a small cirle that is a certian color for status-->
-                        </figcaption>
-                    </figure>
-                </section>
-            </div>
-            <br>
+            </section>
 
-            <div class="card" id="chicago_pd">
-                <section>
-                    <figure>
-                        <a href="crime_series/chicago_pd.html" target="_self">
-                            <img src="https://res.cloudinary.com/dtznj6x3p/image/upload/v1763756833/chicago_pd_bwtxqj.jpg"
-                                alt="chicago pd poster image" width="480" height="720">
-                        </a>
-                        <figcaption>
-                            <strong>Chicago P.D.</strong> <!--Name of show-->
-                            <br>
-                            <em>Ongoing</em> <!--I want to have a small cirle that is a certian color for status-->
-                        </figcaption>
-                    </figure>
-                </section>
-            </div>
-        </div> 
-        <br>
+            <section class="genres">
+                <h3>Genres</h3>
+                <ul>
+                    <li><a href="drama.html">Drama</a></li>
+                    <li><a href="crime.html">Crime</a></li>
+                    <li><a href="anime.html">Anime</a></li>
+                </ul>
 
-        <a href="#top_of_page">
-            <button>Back to Top</button>
-        </a>
+            </section>
+
+        </nav>
+
+        </section>
+    </header>
+
+    <main>
+        <section class="promo"> <!--section 1  -->
+            <p id="promo-heading">The best place to get updates on all your favorite TV series</p> <!--this will be resized with CSS. I was considering making it a heading but I wasnt sure.-->
+            <p>Keep track of everything you are watching</p>
+            <p>Read the latest News on what's happening in your shows</p>
+            <p>Get notified when new episodes/seasons are about to drop!</p>
+            <p>Discover what to watch next!</p>
+            <p>See the release schedule of all your favorite shows</p>
+        </section>
+
+        <section class="trending" id="trending-shows"> <!--section 2-->
+            <h2><a href="trending.html">Trending shows</a></h2>
+            <p>Shows with the most views in the last 5 days</p>
+
+            <a href="wednesday-card.html"><article class="card" id="wednesday">
+            <figure>
+                <h2>WEDNESDAY<h2>
+                <img src="" alt=""> <!--place image and type a description later-->
+                <figcaption>2 season . 2025 . Continuing</figcaption> <!--will adujust size with CSS-->
+            </figure>
+            </article></a>
+
+            <a href="law-and-order-svu-card.html"><article clas="card" id="Law-and-order-svu">
+            <figure>
+                <h2>Law & Order: Special Victims Unit<h2>
+                <img src="" alt=""> <!--place image and type a description later-->
+                <figcaption>27 season . 2025 . Continuing</figcaption> <!--will adujust size with CSS-->
+            </figure>
+            </article></a>
+
+            <a href="invincible-card.html"><article class="card" id="invincible">
+            <figure>
+                <h2>INVINCIBLE<h2>
+                <img src="" alt=""> <!--place image and type a description later-->
+                <figcaption>4 season . 2025 . Continuing</figcaption> <!--will adujust size with CSS-->
+            </figure>
+            </article></a>
+
+        </section>
+
+        <section class="news" id="favorite-tv-shows"> <!--section 3-->
+            <h2><a href="recently-added.html">My Favorites</a></h2>
+            <p>Countinue watching the shows you love!</p>
+
+            <a href="wednesday-card.html"><article href="#wednesday"> <!--since the favorties is something you add i thought it would work if i just linked it back to the first time i introduced it like in the trend page since they will be opening the same page and i know i cant use the same id for the same doc.-->
+            <figure>
+                <h2>WEDNESDAY<h2>
+                <img src="" alt=""> <!--place image and type a description later-->
+                <figcaption>2 season . 2025 . Continuing</figcaption> <!--will adujust size with CSS-->
+            </figure>
+            </article></a>
+
+            <a href="law-and-order-svu-card.html"><article href="#Law-and-order-svu">
+            <figure>
+                <h2>Law & Order: Special Victims Unit<h2>
+                <img src="" alt=""> <!--place image and type a description later-->
+                <figcaption>27 season . 2025 . Continuing</figcaption> <!--will adujust size with CSS-->
+            </figure>
+            </article></a>
+
+            <a href="invincible-card.html"><article href="#invincible">
+            <figure>
+                <h2>INVINCIBLE<h2>
+                <img src="" alt=""> <!--place image and type a description later-->
+                <figcaption>4 season . 2025 . Continuing</figcaption> <!--will adujust size with CSS-->
+            </figure>
+            </article></a>
+
+        </section>
+
+        <section class="news" id="news-on-fav-tv-shows"> <!--section 4-->
+            <h2><a href="top-news.html">What's News</a></h2>
+            <p>What's going on with your favorite TV shows?</p>
+            
+            <a><article class="news" id="law-and-order-svu-news"> <!--this section is strictly for showing articles on my favorited shows don't know how it will work here but i started the code anyways-->
+                <h2>Is this the last season of Law & Order SVU?</h2>
+                    <p>Season 27 might just be the end of Law & Order SVU</p>
+                    <img src="" alt="" > <!--i will add an image and desciption-->
+            </article></a>
+
+            <a><article class="news" id="invincible-news">
+                <h2>Invicible season 4? More like, is Mark ever gonna win a fight on his own?</h2>
+                <p>The people want to know, will mark ever win a fight, and when he does who will it be?</p>
+                <img src="" alt=""> <!--i will add an image and desciption-->
+
+            </article></a>
+
+            <a><article class="news" id="wednesday-news">
+                <h2>The actor for WEDNESDAY'S aunt for season 3 has been revealed</h2>
+                <p>She's always been apart of the dark parts of film and joining th cast of Wednesday won't be any different!</p>
+                <img src="" alt=""> <!--i will add an image and desciption-->
+
+            </article></a>
+
+        </section>
 
     </main>
 
     <footer>
-        <p>
-            Copyright Claims
-        </p>
-    </footer>
-</body>
+        <address> <!--I have no idea how to write the code here or if i should add anything at all.-->
 
+        </address>
+    </footer>
+  </body>
 </html>
