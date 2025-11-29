@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!--This is my front/main page for my site-->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,177 +12,108 @@
 <body>
     <header>
         <h1>LOIS.TV</h1>
-        <nav class="main-nav-bar"> <!--This is my main page navigation section-->
+        <nav class="main-nav-bar">
             <ul class="nav-links">
-                <li><a href="#trending-shows">Trending</a></li>
-                <li><a href="#my-favorite-tv-shows">My Favorites</a></li>
+                <li><a href="#watching">Watching</a></li>
+                <li><a href="#completed">Completed</a></li>
                 <li><a href="#whats-news">What's News</a></li>
             </ul>
         </nav>
-        <div class="menu-box"> <!--This is my menu box-->
+
+        <!--sandwitch menu box-->
+        <div class="menu-box">
+
+            <!--title/logo-->
             <h2>
                 <a href="index.html">LOIS.TV</a>
             </h2>
-            <button class="close-menu" aria-label="close menu"> <!--close menu x-->
+
+            <!--close button-->
+            <button class="close-menu-box" aria-label="close menu box">
                 X
             </button>
-            <form action="#" method="get"> <!--need an action--> <!--This is my search bar-->
-                <input type="text" name="q" placeholder="Search titles"> <!--need a name-->
+
+            <!--search bar-->
+            <form action="#" method="get">
+                <input type="text" name="q" placeholder="Search shows">
                 <button class="search-button" type="submit">
                     Search
                 </button>
             </form>
-            <div class="shows-menu">
-                <h3>Shows</h3>
+
+            <!--drop down watchlist menu-->
+            <div class="watchlist">
+                <h3>Watchlist</h3>
                 <ul>
-                    <li><a href="trending-shows.html">Trending</a></li>
-                    <li><a href="newly-released.html">Newly Released</a></li>
-                    <li><a href="plan-to-watch.html">Plan to Watch</a></li>
+                    <li><a href="watching.html">Watching</a></li>
+                    <li><a href="completed.html">Completed</a></li>
+                    <li><a href="whats-news.html">What's news</a></li>
                 </ul>
             </div>
-            <div class="my-favorites-menu">
-                <h3>My favorites</h3>
-                <ul>
-                    <li><a href="my-favorites.html">Recently Added</a></li>
-                    <li><a href="trending-news.html">Top News</a></li>
-                </ul>
-            </div>
-            <div class="genres-menu">
-                <h3>Genres</h3>
-                <ul>
-                    <li><a href="drama.html">Drama</a></li>
-                    <li><a href="crime.html">Crime</a></li>
-                    <li><a href="anime.html">Anime</a></li>
-                </ul>
-            </div>
+
+            <h3>What's News</h3>
+
         </div>
     </header>
+
     <main>
-        <section class="promo-section"> <!--section 1-PROMO-->
-            <h2>The best place to get updates on all your favorite TV series</h2>
-            <ul class="promo-list">
-                <li>Keep track of everything you are watching</li>
-                <li>Read the latest News on what's happening in your shows</li>
-                <li>Get notified when new episodes/seasons are about to drop!</li>
-                <li>Discover what to watch next!</li>
-                <li>See the release schedule of all your favorite shows</li>
-            </ul>
-        </section>
-        <section class="trending-section" id="trending-shows"> <!--section 2 TRENDING TV SHOWS-->
+        <!--section 1 Watching-->
+        <section class="my-watching" id="watching">
             <h2>
-                <a href="trending-shows.html">
-                    Trending shows
-                </a>
+                <a href="watching.html">Watching</a>
             </h2>
-            <p>Shows with the most views in the last 5 days</p>
+
             <article class="card">
                 <a href="wednesday-card.html">
                     <figure>
                         <h3>WEDNESDAY</h3>
                         <img src="https://res.cloudinary.com/dtznj6x3p/image/upload/v1764207039/wednesday_aclkku.webp"
                             alt="wednesday addams" width="220" height="330">
-                        <!--place image and type a description later-->
-                        <figcaption>2 season . 2025 . Continuing</figcaption> <!--will adujust size with CSS-->
+                        <figcaption>2 season . 2025 . Continuing</figcaption>
                     </figure>
                 </a>
             </article>
-            <article class="card">
-                <a href="law-and-order-svu-card.html">
-                    <figure>
-                        <h3>Law & Order: Special Victims Unit</h3>
-                        <img src="https://res.cloudinary.com/dtznj6x3p/image/upload/v1763756839/law_and_order_svu_xpw5xa.jpg"
-                            alt="law and order svu poster" width="220" height="330">
-                        <!--place image and type a description later-->
-                        <figcaption>27 season . 2025 . Continuing</figcaption> <!--will adujust size with CSS-->
-                    </figure>
-                </a>
-            </article>
+        </section>
+
+        <!--section 2 Completed-->
+        <section class="my-completed" id="completed">
+            <h2>
+                <a href="completed.html">Completed</a>
+            </h2>
+
             <article class="card">
                 <a href="invincible-card.html">
                     <figure>
                         <h3>INVINCIBLE</h3>
                         <img src="https://res.cloudinary.com/dtznj6x3p/image/upload/v1764204764/invincible_rlky4v.jpg"
-                            alt="invincible tv series poster" width="220" height="330">
-                        <!--place image and type a description later-->
-                        <figcaption>4 season . 2025 . Continuing</figcaption> <!--will adujust size with CSS-->
+                            alt="invincible" width="220" height="330">
+                        <figcaption>4 season . 2025 . Continuing</figcaption>
                     </figure>
                 </a>
             </article>
         </section>
-        <section class="favorites-section" id="my-favorite-tv-shows"> <!--section 3 MY FAVORITES-->
+
+        <!--section 4 What's News-->
+        <section class="my-news" id="whats-news">
             <h2>
-                <a href="my-favorites.html">
-                    My Favorites
-                </a>
+                <a href="trending-news.html">What's News</a>
             </h2>
-            <p>Continue watching the shows you love!</p>
-            <article class="card">
-                <a href="wednesday-card.html">
-                    <figure>
-                        <h3>WEDNESDAY</h3>
-                        <img src="https://res.cloudinary.com/dtznj6x3p/image/upload/v1764207039/wednesday_aclkku.webp"
-                            alt="wednesday addams" width="220" height="330">
-                        <!--place image and type a description later-->
-                        <figcaption>2 season . 2025 . Continuing</figcaption> <!--will adujust size with CSS-->
-                    </figure>
-                </a>
-            </article>
-            <article class="card">
-                <a href="law-and-order-svu-card.html">
-                    <figure>
-                        <h3>Law & Order: Special Victims Unit</h3>
-                        <img src="https://res.cloudinary.com/dtznj6x3p/image/upload/v1763756839/law_and_order_svu_xpw5xa.jpg"
-                            alt="law and order svu poster" width="220" height="330">
-                        <!--place image and type a description later-->
-                        <figcaption>27 season . 2025 . Continuing</figcaption> <!--will adujust size with CSS-->
-                    </figure>
-                </a>
-            </article>
-            <article class="card">
-                <a href="invincible-card.html">
-                    <figure>
-                        <h3>INVINCIBLE</h3>
-                        <img src="https://res.cloudinary.com/dtznj6x3p/image/upload/v1764204764/invincible_rlky4v.jpg"
-                            alt="invincible" width="220" height="330"> <!--place image and type a description later-->
-                        <figcaption>4 season . 2025 . Continuing</figcaption> <!--will adujust size with CSS-->
-                    </figure>
-                </a>
-            </article>
-        </section>
-        <section class="news-section" id="whats-news"> <!--section 4 TRENDING NEWS-->
-            <h2>
-                <a href="trending-news.html">
-                    What's News
-                </a>
-            </h2>
-            <p>What's going on with your favorite TV shows?</p>
-            <article class="news">
+
+            <article class="news-card">
                 <a href="#">
                     <h3>Is this the last season of Law & Order SVU?</h3>
                     <p>Season 27 might just be the end of Law & Order SVU</p>
-                    <img src="#" alt="blank"> <!--i will add an image and desciption-->
-                </a>
-            </article>
-            <article class="news">
-                <a href="#">
-                    <h3>Invicible season 4? More like, is Mark ever gonna win a fight on his own?</h3>
-                    <p>The people want to know, will mark ever win a fight, and when he does who will it be?</p>
-                    <img src="#" alt="blank"> <!--i will add an image and desciption-->
-                </a>
-            </article>
-            <article class="news">
-                <a href="#">
-                    <h3>The actor for WEDNESDAY'S aunt for season 3 has been revealed</h3>
-                    <p>She's always been apart of the dark parts of film and joining th cast of Wednesday won't be any
-                        different!</p>
-                    <img src="#" alt="blank"> <!--i will add an image and desciption-->
+                    <img src="#" alt="blank">
                 </a>
             </article>
         </section>
+
     </main>
+
     <footer>
         <address> </address>
     </footer>
+
 </body>
 
 </html>
